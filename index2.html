@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Paul Hualde Garro | Gestión Administrativa y Fiscal</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8fafc;
+color:#1e293b;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 25px;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:#0f4c81;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#1e293b;
+font-weight:500;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:120px 20px 80px;
+background:
+linear-gradient(rgba(7,30,56,.70),rgba(7,30,56,.70)),
+url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero-content{
+max-width:1200px;
+margin:auto;
+}
+
+.hero h1{
+font-size:4rem;
+max-width:700px;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:1.25rem;
+max-width:700px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#0ea5e9;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+margin-right:10px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+background:transparent;
+border:2px solid white;
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:90px 25px;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:15px;
+color:#0f4c81;
+}
+
+.section-subtitle{
+text-align:center;
+max-width:700px;
+margin:0 auto 50px;
+color:#64748b;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0f4c81;
+}
+
+.card ul{
+padding-left:20px;
+}
+
+.card li{
+margin-bottom:10px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-box{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.feature{
+background:#e0f2fe;
+padding:20px;
+border-radius:15px;
+font-weight:500;
+}
+
+.cta{
+background:#0f4c81;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.cta h2{
+font-size:2.3rem;
+margin-bottom:20px;
+}
+
+.contact{
+background:white;
+padding:50px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+input,textarea{
+width:100%;
+padding:14px;
+border:1px solid #ddd;
+border-radius:10px;
+margin-top:8px;
+margin-bottom:20px;
+font-family:Poppins;
+}
+
+textarea{
+height:140px;
+resize:none;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.about,
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+nav ul{
+display:none;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">PHG</div>
+
+<ul>
+<li><a href="#servicios">Servicios</a></li>
+<li><a href="#sobre-mi">Sobre mí</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Gestión administrativa e impuestos sin complicaciones</h1>
+
+<p>
+¿Eres autónomo o tienes un pequeño comercio?
+Te ayudo a gestionar trámites, documentación e impuestos para que puedas dedicar tu tiempo a lo que realmente importa: hacer crecer tu negocio.
+</p>
+
+<a href="#contacto" class="btn">Solicitar información</a>
+
+<a href="tel:+34687029154" class="btn btn-outline">Llamar ahora</a>
+
+</div>
+
+</section>
+
+<section id="servicios" class="section">
+
+<h2 class="section-title">Servicios</h2>
+
+<p class="section-subtitle">
+Soluciones prácticas y personalizadas para autónomos y pequeños comercios.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>📊 Gestión administrativa</h3>
+<ul>
+<li>Facturación y control documental</li>
+<li>Organización de ingresos y gastos</li>
+<li>Tramitación administrativa</li>
+<li>Gestiones con organismos públicos</li>
+<li>Control de documentación</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🧾 Presentación de impuestos</h3>
+<ul>
+<li>IVA</li>
+<li>IRPF</li>
+<li>Declaraciones trimestrales</li>
+<li>Declaraciones anuales</li>
+<li>Seguimiento de obligaciones fiscales</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🏪 Apoyo a pequeños comercios</h3>
+<ul>
+<li>Control administrativo</li>
+<li>Organización documental</li>
+<li>Soporte continuo</li>
+<li>Atención personalizada</li>
+<li>Soluciones adaptadas a cada negocio</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section id="sobre-mi" class="section">
+
+<div class="about">
+
+<div class="about-box">
+
+<h2>Hola, soy Paul Hualde Garro</h2>
+
+<br>
+
+<p>
+Soy un profesional especializado en apoyo administrativo y gestión fiscal para autónomos y pequeños comercios.
+</p>
+
+<br>
+
+<p>
+Desde Donostia-San Sebastián ofrezco un servicio cercano, profesional y adaptado a las necesidades de cada cliente.
+</p>
+
+<br>
+
+<p>
+Mi objetivo es ayudarte a cumplir con tus obligaciones administrativas y fiscales de forma sencilla y eficiente, para que puedas dedicar más tiempo a tu negocio y menos tiempo al papeleo.
+</p>
+
+</div>
+
+<div class="features">
+
+<div class="feature">✓ Trato cercano y personalizado</div>
+<div class="feature">✓ Comunicación directa</div>
+<div class="feature">✓ Gestión eficiente</div>
+<div class="feature">✓ Menos preocupaciones</div>
+<div class="feature">✓ Soluciones a medida</div>
+<div class="feature">✓ Servicio online en toda España</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Primera consulta sin compromiso</h2>
+
+<p>
+Analizaremos tu situación y te explicaré cómo puedo ayudarte a simplificar la gestión administrativa y fiscal de tu negocio.
+</p>
+
+<br>
+
+<a href="tel:+34687029154" class="btn">
+Llamar ahora
+</a>
+
+</section>
+
+<section id="contacto" class="section">
+
+<div class="contact">
+
+<h2 class="section-title">Hablemos de tu negocio</h2>
+
+<div class="contact-grid">
+
+<div>
+
+<p><strong>Paul Hualde Garro</strong></p>
+
+<br>
+
+<p>📞 687 029 154</p>
+
+<p>✉️ paulhualdegarro@gmail.com</p>
+
+<p>📍 Donostia-San Sebastián (Gipuzkoa)</p>
+
+<p>💻 Atención presencial</p>
+
+<br>
+
+<p><strong>⚡ Respuesta habitual en menos de 24 horas</strong></p>
+
+<br>
+
+<h3>Dedica tu tiempo a tu negocio.</h3>
+<h3>Yo me encargo de la gestión.</h3>
+
+</div>
+
+<div>
+
+<form>
+
+<label>Nombre</label>
+<input type="text" placeholder="Tu nombre">
+
+<label>Email</label>
+<input type="email" placeholder="Tu correo electrónico">
+
+<label>Teléfono</label>
+<input type="tel" placeholder="Tu teléfono">
+
+<label>Mensaje</label>
+<textarea placeholder="Cuéntame cómo puedo ayudarte"></textarea>
+
+<button class="btn" type="submit">
+Enviar consulta
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Paul Hualde Garro · Gestión Administrativa y Fiscal
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/34687029154" target="_blank">
+💬
+</a>
+
+</body>
+</html>
